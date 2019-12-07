@@ -1,0 +1,34 @@
+:host {
+	display: block;
+	line-height: 1.75;
+}
+.ngx-shimmer {
+	display: inline-block;
+	width: 100%;
+	height: 12px;
+	background-color: #F6F7F8;
+	background-image: linear-gradient(to right, #F6F7F8 0, #EDEEF1 20%, #F6F7F8 40%, #F6F7F8 100%);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 1000px 1000px;
+	animation: shimmerEffect 1s linear infinite forwards;
+	&.rtl {
+		animation: shimmerEffectRTL 1s linear infinite forwards;
+	}
+}
+@keyframes shimmerEffect {
+	0% {
+		background-position: -1000px 0;
+	}
+	100% {
+		background-position: 1000px 0;
+	}
+}
+@keyframes shimmerEffectRTL {
+	0% {
+		background-position: 1000px 0;
+	}
+	100% {
+		background-position: -1000px 0;
+	}
+}
