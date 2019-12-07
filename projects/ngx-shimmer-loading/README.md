@@ -52,11 +52,11 @@ Example:
 ### Inputs
 | Input  | Type | Default | Required | Description |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| shape | `'circle'  OR  'square'  OR  'rect'` | `rect` | no | Set set shimmer shape. |
+| shape | `'circle'`  OR  `'square'`  OR  `'rect'` | `rect` | no | Set set shimmer shape. |
 | width | `string` | `'80%'` | no | Set shimmer width. In case of shape is `'circle'` or `'square'` use width with `px` unit. |
 | height | `string` | `'12px'` | no | Set shimmer height. In case of shape is `'circle'` or `'square'` shimmer height will `equal` shimmer width. |
 | borderRadius | `string` | `'5px'` | no | Set shimmer border radius. In case of shape is `'circle'` borderRadius equals `'50%'` |
-| direction | `'ltr'  OR  'rtl'` | `'ltr'` | no | Set shimmer direction. |
+| direction | `'ltr'`  OR  `'rtl'` | `'ltr'` | no | Set shimmer direction. |
 
 
 ## Contributing
