@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-shimmer-loading": [
+        "dist/ngx-shimmer-loading"
+      ],
+      "ngx-shimmer-loading/*": [
+        "dist/ngx-shimmer-loading/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

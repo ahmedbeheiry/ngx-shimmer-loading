@@ -1,6 +1,30 @@
 {
   "name": "shimmer-loading",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "author": {
+    "name": "Ahmed Beheiry",
+    "email": "ahmed_beheiry@yahoo.com",
+    "url": "http://ahmedbeheiry.co/"
+  },
+  "description": "Facebook shimmer loading effect for Angular 8+ apps. It's a fancy way to tell your users that there's something loading. ngx-shimmer-loading is simple and easy to use. It also comes with the two directions.",
+  "homepage": "https://github.com/ahmedbeheiry/ngx-shimmer-loading",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahmedbeheiry/ngx-shimmer-loading.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ahmedbeheiry/ngx-shimmer-loading/issues"
+  },
+  "license": "MIT",
+  "keywords": [
+    "shimmer",
+    "loading",
+    "facebook shimmer",
+    "angular",
+    "angular shimmer",
+    "angular loading",
+    "angular2"
+  ],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -25,6 +49,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.803.6",
+    "@angular-devkit/build-ng-packagr": "~0.803.20",
     "@angular/cli": "~8.3.6",
     "@angular/compiler-cli": "~8.2.8",
     "@angular/language-service": "~8.2.8",
@@ -39,8 +64,10 @@
     "karma-coverage-istanbul-reporter": "~2.0.1",
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.4.0",
+    "ng-packagr": "^5.4.0",
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
+    "tsickle": "^0.37.0",
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
   }

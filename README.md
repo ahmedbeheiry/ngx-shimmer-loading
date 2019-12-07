@@ -1,27 +1,64 @@
-# ShimmerLoading
+# Shimmer Loading for Angular 8+ Apps
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.6.
+Facebook shimmer loading effect for Angular 8+ apps. It's a fancy way to tell your users that there's something loading.
 
-## Development server
+ngx-shimmer-loading is simple and easy to use. It also comes with the two directions
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+See [Demo](https://ngx-shimmer-loading.stackblitz.io/) page.
 
-## Code scaffolding
+## Table of contents
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+  * [Features](#features)
+  * [Getting started](#getting-started)
+  * [API](#api)
+  * [Contributing](#contributing)
 
-## Build
+## Features
+- [x] Easy and simple to use.
+- [x] Easy to setup.
+- [x] No Dependencies.
+- [x] Fancy Animations.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Getting started
 
-## Running unit tests
+### Step 1: Install `ngx-shimmer-loading`:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+#### NPM
+```shell
+npm i --save ngx-shimmer-loading
+```
+### Step 2: Import the NgxShimmerLoadingModule into your module:
+```ts
+import { NgxShimmerLoadingModule } from  'ngx-shimmer-loading';
+@NgModule({
+  ...
+  imports: [ NgxShimmerLoadingModule ],
+  ...
+})
+export class AppModule {}
+```
 
-## Running end-to-end tests
+### Step 3: Use the ngx-shimmer-loading component:
+```html
+<ngx-shimmer-loading></ngx-shimmer-loading>
+```
+You can customize it with different inputs - check [API](#api) for more details.
+Example:
+```html
+<ngx-shimmer-loading [shape]="'square'" [width]="'70px'"></ngx-shimmer-loading>
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## API
+### Inputs
+| Input  | Type | Default | Required | Description |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| shape | `'circle'  OR  'square'  OR  'rect'` | `rect` | no | Set set shimmer shape. |
+| width | `string` | `'80%'` | no | Set shimmer width. In case of shape is `'circle'` or `'square'` use width with `px` unit. |
+| height | `string` | `'12px'` | no | Set shimmer height. In case of shape is `'circle'` or `'square'` shimmer height will `equal` shimmer width. |
+| borderRadius | `string` | `'5px'` | no | Set shimmer border radius. In case of shape is `'circle'` borderRadius equals `'50%'` |
+| direction | `'ltr'  OR  'rtl'` | `'ltr'` | no | Set shimmer direction. |
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Contributing
+
+Contributions are welcome. You can start by looking at [issues](https://github.com/ahmedbeheiry/ngx-shimmer-loading/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) with label *Help wanted*  or creating new Issue with proposal or bug report.

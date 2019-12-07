@@ -124,6 +124,41 @@
           }
         }
       }
+    },
+    "ngx-shimmer-loading": {
+      "projectType": "library",
+      "root": "projects/ngx-shimmer-loading",
+      "sourceRoot": "projects/ngx-shimmer-loading/src",
+      "prefix": "ngx",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-shimmer-loading/tsconfig.lib.json",
+            "project": "projects/ngx-shimmer-loading/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-shimmer-loading/src/test.ts",
+            "tsConfig": "projects/ngx-shimmer-loading/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-shimmer-loading/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-shimmer-loading/tsconfig.lib.json",
+              "projects/ngx-shimmer-loading/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "shimmer-loading"
 }
