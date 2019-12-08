@@ -27,7 +27,7 @@ See [Demo](https://ngx-shimmer-loading.stackblitz.io/) page.
 ```shell
 npm i --save ngx-shimmer-loading
 ```
-### Step 2: Import the NgxShimmerLoadingModule into your module:
+### Step 2: Import the `NgxShimmerLoadingModule` into your module:
 ```ts
 import { NgxShimmerLoadingModule } from  'ngx-shimmer-loading';
 @NgModule({
@@ -38,11 +38,12 @@ import { NgxShimmerLoadingModule } from  'ngx-shimmer-loading';
 export class AppModule {}
 ```
 
-### Step 3: Use the ngx-shimmer-loading component:
+### Step 3: Use the `ngx-shimmer-loading` component:
 ```html
 <ngx-shimmer-loading></ngx-shimmer-loading>
 ```
 You can customize it with different inputs - check [API](#api) for more details.
+
 Example:
 ```html
 <ngx-shimmer-loading [shape]="'square'" [width]="'70px'"></ngx-shimmer-loading>
