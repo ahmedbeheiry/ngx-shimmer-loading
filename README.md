@@ -27,7 +27,7 @@ See [Demo](https://ngx-shimmer-loading.stackblitz.io/) page.
 ```shell
 npm i --save ngx-shimmer-loading
 ```
-### Step 2: Import the NgxShimmerLoadingModule into your module:
+### Step 2: Import the `NgxShimmerLoadingModule` into your module:
 ```ts
 import { NgxShimmerLoadingModule } from  'ngx-shimmer-loading';
 @NgModule({
@@ -38,11 +38,12 @@ import { NgxShimmerLoadingModule } from  'ngx-shimmer-loading';
 export class AppModule {}
 ```
 
-### Step 3: Use the ngx-shimmer-loading component:
+### Step 3: Use the `ngx-shimmer-loading` component:
 ```html
 <ngx-shimmer-loading></ngx-shimmer-loading>
 ```
 You can customize it with different inputs - check [API](#api) for more details.
+
 Example:
 ```html
 <ngx-shimmer-loading [shape]="'square'" [width]="'70px'"></ngx-shimmer-loading>
@@ -52,7 +53,7 @@ Example:
 ### Inputs
 | Input  | Type | Default | Required | Description |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| shape | `'circle'`  OR  `'square'`  OR  `'rect'` | `rect` | no | Set set shimmer shape. |
+| shape | `'circle'`  OR  `'square'`  OR  `'rect'` | `rect` | no | Set shimmer shape. |
 | width | `string` | `'80%'` | no | Set shimmer width. In case of shape is `'circle'` or `'square'` use width with `px` unit. |
 | height | `string` | `'12px'` | no | Set shimmer height. In case of shape is `'circle'` or `'square'` shimmer height will `equal` shimmer width. |
 | borderRadius | `string` | `'5px'` | no | Set shimmer border radius. In case of shape is `'circle'` borderRadius equals `'50%'` |
