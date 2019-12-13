@@ -4,7 +4,7 @@ Facebook shimmer loading effect for Angular 8+ apps. It's a fancy way to tell yo
 
 ngx-shimmer-loading is simple and easy to use. It also comes with the two directions
 
-See [Demo](https://ngx-shimmer-loading.stackblitz.io/) page.
+See [Demo](https://ahmedbeheiry.github.io/ngx-shimmer-loading) page.
 
 ## Table of contents
 
