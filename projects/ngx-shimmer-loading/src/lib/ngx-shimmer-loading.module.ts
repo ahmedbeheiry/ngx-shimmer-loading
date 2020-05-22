@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 
 import { NgxShimmerLoadingComponent } from './ngx-shimmer-loading.component';
 
 @NgModule({
   declarations: [NgxShimmerLoadingComponent],
-  imports: [BrowserModule],
+  imports: [CommonModule],
   exports: [NgxShimmerLoadingComponent]
 })
 export class NgxShimmerLoadingModule {}
