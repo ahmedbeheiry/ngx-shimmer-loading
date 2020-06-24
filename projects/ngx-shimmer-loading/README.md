@@ -11,6 +11,7 @@ See [Demo](https://ahmedbeheiry.github.io/ngx-shimmer-loading) page.
   * [Features](#features)
   * [Getting started](#getting-started)
   * [API](#api)
+  * [Custom Styles](#custom-styles)
   * [Contributing](#contributing)
 
 ## Features
@@ -59,6 +60,14 @@ Example:
 | borderRadius | `string` | `'5px'` | no | Set shimmer border radius. In case of shape is `'circle'` borderRadius equals `'50%'` |
 | direction | `'ltr'`  OR  `'rtl'` | `'ltr'` | no | Set shimmer direction. |
 
+## Custom Styles
+If you are not happy with default styles you can easily override them with your styles like that:
+```css
+.shimmer-loading .ngx-shimmer {
+	// Your styles go here...
+}
+```
+Note that: shimmer effect animation here depends on css `linear-gradient` property so, if you want to change its color you can edit it or you can unset it and change its `background-color` value if you don't want the shimmer effect animation.
 
 ## Contributing
 
