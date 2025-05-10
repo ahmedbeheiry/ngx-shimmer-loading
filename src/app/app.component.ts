@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
+import { NgxShimmerLoadingModule } from 'ngx-shimmer-loading';
 
 @Component({
   selector: 'app-root',
+  imports: [NgxShimmerLoadingModule],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'shimmer-loading';

@@ -1,32 +1,37 @@
 {
   "name": "ngx-shimmer-loading",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "author": {
-	  "name": "Ahmed Beheiry",
-	  "email": "ahmed_beheiry@yahoo.com",
-	  "url": "http://ahmedbeheiry.me/"
+    "name": "Ahmed Beheiry",
+    "email": "ahmed_beheiry@yahoo.com",
+    "url": "http://ahmedbeheiry.com/"
   },
-  "description": "Facebook shimmer loading effect for Angular 8+ apps. It's a fancy way to tell your users that there's something loading. ngx-shimmer-loading is simple and easy to use. It also comes with the two directions.",
+  "description": "Facebook-style shimmer loading placeholder for Angular 15+. Simple, customizable, and easy to use in any Angular project.",
   "homepage": "https://ahmedbeheiry.github.io/ngx-shimmer-loading",
   "repository": {
-	  "type": "git",
-	  "url": "https://github.com/ahmedbeheiry/ngx-shimmer-loading.git"
+    "type": "git",
+    "url": "https://github.com/ahmedbeheiry/ngx-shimmer-loading.git"
   },
   "bugs": {
-	  "url": "https://github.com/ahmedbeheiry/ngx-shimmer-loading/issues"
+    "url": "https://github.com/ahmedbeheiry/ngx-shimmer-loading/issues"
   },
   "license": "MIT",
   "keywords": [
-	  "shimmer",
-	  "loading",
-	  "facebook shimmer",
-	  "angular",
-	  "angular shimmer",
-	  "angular loading",
-	  "angular2"
+    "shimmer",
+    "loading",
+    "placeholder",
+    "angular",
+    "angular shimmer",
+    "angular loading",
+    "ngx",
+    "skeleton screen"
   ],
   "peerDependencies": {
-    "@angular/common": "^8.2.14",
-    "@angular/core": "^8.2.14"
-  }
+    "@angular/common": ">=15.0.0 <20.0.0",
+    "@angular/core": ">=15.0.0 <20.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.4.0"
+  },
+  "sideEffects": false
 }

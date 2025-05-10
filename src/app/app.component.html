@@ -1,85 +1,180 @@
 <div class="container mb-3">
-	<div class="intro text-center">
-		<h1 class="intro__title">ngx-shimmer-loading</h1>
-		<p class="intro__desc">Facebook shimmer loading effect for Angular 8+ apps. It's a fancy way to tell your users that there's something loading.</p>
-		<p class="intro__desc">ngx-shimmer-loading is simple and easy to use. It also comes with the two directions</p>
-	</div>
-	<h2>LTR Direction</h2>
-	<div class="row mb-3">
-		<div class="card">
-			<ngx-shimmer-loading [shape]="'circle'" [width]="'70px'"></ngx-shimmer-loading>
-			<ngx-shimmer-loading [width]="'100%'" [height]="'20px'"></ngx-shimmer-loading>
-			<ngx-shimmer-loading [height]="'20px'"></ngx-shimmer-loading>
-			<ngx-shimmer-loading [width]="'100%'"></ngx-shimmer-loading>
-			<ngx-shimmer-loading [width]="'100%'"></ngx-shimmer-loading>
-			<ngx-shimmer-loading [width]="'100%'"></ngx-shimmer-loading>
-			<ngx-shimmer-loading [width]="'70%'"></ngx-shimmer-loading>
-		</div>
-		
-		<div class="card">
-			<ngx-shimmer-loading [shape]="'rect'" [width]="'100%'" [height]="'120px'"></ngx-shimmer-loading>
-			<ngx-shimmer-loading [width]="'100%'" [height]="'20px'"></ngx-shimmer-loading>
-			<ngx-shimmer-loading [height]="'20px'"></ngx-shimmer-loading>
-			<ngx-shimmer-loading [width]="'100%'"></ngx-shimmer-loading>
-			<ngx-shimmer-loading [width]="'70%'"></ngx-shimmer-loading>
-		</div>
-		
-		<div class="card">
-			<div class="d-flex-center">
-				<ngx-shimmer-loading [shape]="'square'" [width]="'70px'"></ngx-shimmer-loading>
-				<div class="flex-1">
-					<ngx-shimmer-loading [width]="'100%'" [height]="'20px'"></ngx-shimmer-loading>
-					<ngx-shimmer-loading [width]="'100%'"></ngx-shimmer-loading>
-				</div>
-			</div>
-			<ngx-shimmer-loading [width]="'100%'"></ngx-shimmer-loading>
-			<ngx-shimmer-loading [width]="'100%'"></ngx-shimmer-loading>
-			<ngx-shimmer-loading [width]="'100%'"></ngx-shimmer-loading>
-			<ngx-shimmer-loading [width]="'50%'"></ngx-shimmer-loading>
-		</div>
-	</div>
-	
-	<h2>RTL Direction</h2>
-	<div class="row" dir="rtl">
-		<div class="card">
-			<ngx-shimmer-loading [direction]="'rtl'" [shape]="'circle'" [width]="'70px'"></ngx-shimmer-loading>
-			<ngx-shimmer-loading [direction]="'rtl'" [width]="'100%'" [height]="'20px'"></ngx-shimmer-loading>
-			<ngx-shimmer-loading [direction]="'rtl'" [height]="'20px'"></ngx-shimmer-loading>
-			<ngx-shimmer-loading [direction]="'rtl'" [width]="'100%'"></ngx-shimmer-loading>
-			<ngx-shimmer-loading [direction]="'rtl'" [width]="'100%'"></ngx-shimmer-loading>
-			<ngx-shimmer-loading [direction]="'rtl'" [width]="'100%'"></ngx-shimmer-loading>
-			<ngx-shimmer-loading [direction]="'rtl'" [width]="'70%'"></ngx-shimmer-loading>
-		</div>
-		
-		<div class="card">
-			<ngx-shimmer-loading [direction]="'rtl'" [shape]="'rect'" [width]="'100%'" [height]="'120px'"></ngx-shimmer-loading>
-			<ngx-shimmer-loading [direction]="'rtl'" [width]="'100%'" [height]="'20px'"></ngx-shimmer-loading>
-			<ngx-shimmer-loading [direction]="'rtl'" [height]="'20px'"></ngx-shimmer-loading>
-			<ngx-shimmer-loading [direction]="'rtl'" [width]="'100%'"></ngx-shimmer-loading>
-			<ngx-shimmer-loading [direction]="'rtl'" [width]="'70%'"></ngx-shimmer-loading>
-		</div>
-		
-		<div class="card">
-			<div class="d-flex-center">
-				<ngx-shimmer-loading [direction]="'rtl'" [shape]="'square'" [width]="'70px'"></ngx-shimmer-loading>
-				<div class="flex-1">
-					<ngx-shimmer-loading [direction]="'rtl'" [width]="'100%'" [height]="'20px'"></ngx-shimmer-loading>
-					<ngx-shimmer-loading [direction]="'rtl'" [width]="'100%'"></ngx-shimmer-loading>
-				</div>
-			</div>
-			<ngx-shimmer-loading [direction]="'rtl'" [width]="'100%'"></ngx-shimmer-loading>
-			<ngx-shimmer-loading [direction]="'rtl'" [width]="'100%'"></ngx-shimmer-loading>
-			<ngx-shimmer-loading [direction]="'rtl'" [width]="'100%'"></ngx-shimmer-loading>
-			<ngx-shimmer-loading [direction]="'rtl'" [width]="'50%'"></ngx-shimmer-loading>
-		</div>
-	</div>
+  <div class="intro text-center">
+    <h1 class="intro__title">ngx-shimmer-loading</h1>
+    <p class="intro__desc">
+      Facebook shimmer loading effect for Angular apps. It's a fancy way to
+      tell your users that there's something loading.
+    </p>
+    <p class="intro__desc">
+      ngx-shimmer-loading is simple and easy to use. It also comes with the two
+      directions
+    </p>
+  </div>
+  <h2>LTR Direction</h2>
+  <div class="row mb-3">
+    <div class="card">
+      <ngx-shimmer-loading
+        [shape]="'circle'"
+        [width]="'70px'"
+      ></ngx-shimmer-loading>
+      <ngx-shimmer-loading
+        [width]="'100%'"
+        [height]="'20px'"
+      ></ngx-shimmer-loading>
+      <ngx-shimmer-loading [height]="'20px'"></ngx-shimmer-loading>
+      <ngx-shimmer-loading [width]="'100%'"></ngx-shimmer-loading>
+      <ngx-shimmer-loading [width]="'100%'"></ngx-shimmer-loading>
+      <ngx-shimmer-loading [width]="'100%'"></ngx-shimmer-loading>
+      <ngx-shimmer-loading [width]="'70%'"></ngx-shimmer-loading>
+    </div>
+
+    <div class="card">
+      <ngx-shimmer-loading
+        [shape]="'rect'"
+        [width]="'100%'"
+        [height]="'120px'"
+      ></ngx-shimmer-loading>
+      <ngx-shimmer-loading
+        [width]="'100%'"
+        [height]="'20px'"
+      ></ngx-shimmer-loading>
+      <ngx-shimmer-loading [height]="'20px'"></ngx-shimmer-loading>
+      <ngx-shimmer-loading [width]="'100%'"></ngx-shimmer-loading>
+      <ngx-shimmer-loading [width]="'70%'"></ngx-shimmer-loading>
+    </div>
+
+    <div class="card">
+      <div class="d-flex-center">
+        <ngx-shimmer-loading
+          [shape]="'square'"
+          [width]="'70px'"
+        ></ngx-shimmer-loading>
+        <div class="flex-1">
+          <ngx-shimmer-loading
+            [width]="'100%'"
+            [height]="'20px'"
+          ></ngx-shimmer-loading>
+          <ngx-shimmer-loading [width]="'100%'"></ngx-shimmer-loading>
+        </div>
+      </div>
+      <ngx-shimmer-loading [width]="'100%'"></ngx-shimmer-loading>
+      <ngx-shimmer-loading [width]="'100%'"></ngx-shimmer-loading>
+      <ngx-shimmer-loading [width]="'100%'"></ngx-shimmer-loading>
+      <ngx-shimmer-loading [width]="'50%'"></ngx-shimmer-loading>
+    </div>
+  </div>
+
+  <h2>RTL Direction</h2>
+  <div class="row" dir="rtl">
+    <div class="card">
+      <ngx-shimmer-loading
+        [direction]="'rtl'"
+        [shape]="'circle'"
+        [width]="'70px'"
+      ></ngx-shimmer-loading>
+      <ngx-shimmer-loading
+        [direction]="'rtl'"
+        [width]="'100%'"
+        [height]="'20px'"
+      ></ngx-shimmer-loading>
+      <ngx-shimmer-loading
+        [direction]="'rtl'"
+        [height]="'20px'"
+      ></ngx-shimmer-loading>
+      <ngx-shimmer-loading
+        [direction]="'rtl'"
+        [width]="'100%'"
+      ></ngx-shimmer-loading>
+      <ngx-shimmer-loading
+        [direction]="'rtl'"
+        [width]="'100%'"
+      ></ngx-shimmer-loading>
+      <ngx-shimmer-loading
+        [direction]="'rtl'"
+        [width]="'100%'"
+      ></ngx-shimmer-loading>
+      <ngx-shimmer-loading
+        [direction]="'rtl'"
+        [width]="'70%'"
+      ></ngx-shimmer-loading>
+    </div>
+
+    <div class="card">
+      <ngx-shimmer-loading
+        [direction]="'rtl'"
+        [shape]="'rect'"
+        [width]="'100%'"
+        [height]="'120px'"
+      ></ngx-shimmer-loading>
+      <ngx-shimmer-loading
+        [direction]="'rtl'"
+        [width]="'100%'"
+        [height]="'20px'"
+      ></ngx-shimmer-loading>
+      <ngx-shimmer-loading
+        [direction]="'rtl'"
+        [height]="'20px'"
+      ></ngx-shimmer-loading>
+      <ngx-shimmer-loading
+        [direction]="'rtl'"
+        [width]="'100%'"
+      ></ngx-shimmer-loading>
+      <ngx-shimmer-loading
+        [direction]="'rtl'"
+        [width]="'70%'"
+      ></ngx-shimmer-loading>
+    </div>
+
+    <div class="card">
+      <div class="d-flex-center">
+        <ngx-shimmer-loading
+          [direction]="'rtl'"
+          [shape]="'square'"
+          [width]="'70px'"
+        ></ngx-shimmer-loading>
+        <div class="flex-1">
+          <ngx-shimmer-loading
+            [direction]="'rtl'"
+            [width]="'100%'"
+            [height]="'20px'"
+          ></ngx-shimmer-loading>
+          <ngx-shimmer-loading
+            [direction]="'rtl'"
+            [width]="'100%'"
+          ></ngx-shimmer-loading>
+        </div>
+      </div>
+      <ngx-shimmer-loading
+        [direction]="'rtl'"
+        [width]="'100%'"
+      ></ngx-shimmer-loading>
+      <ngx-shimmer-loading
+        [direction]="'rtl'"
+        [width]="'100%'"
+      ></ngx-shimmer-loading>
+      <ngx-shimmer-loading
+        [direction]="'rtl'"
+        [width]="'100%'"
+      ></ngx-shimmer-loading>
+      <ngx-shimmer-loading
+        [direction]="'rtl'"
+        [width]="'50%'"
+      ></ngx-shimmer-loading>
+    </div>
+  </div>
 </div>
 
 <footer class="footer">
-	<div class="contaienr">
-		<div class="footer__content">
-			<p class="footer__repo"> Find Ngx Shimmer Loading On <a href="https://github.com/ahmedbeheiry/ngx-shimmer-loading">Github</a></p>
-			<p class="footer__developer">Developed By: <a href="https://ahmedbeheiry.me/" target="_blank">Ahmed Beheiry</a></p>
-		</div>
-	</div>
+  <div class="contaienr">
+    <div class="footer__content">
+      <p class="footer__repo">
+        Find Ngx Shimmer Loading On
+        <a href="https://github.com/ahmedbeheiry/ngx-shimmer-loading">Github</a>
+      </p>
+      <p class="footer__developer">
+        Developed By:
+        <a href="https://ahmedbeheiry.com/" target="_blank">Ahmed Beheiry</a>
+      </p>
+    </div>
+  </div>
 </footer>

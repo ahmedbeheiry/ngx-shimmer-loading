@@ -1,14 +1,19 @@
-import { Component, OnInit, Input, ViewEncapsulation, HostBinding } from '@angular/core';
+import {
+  Component,
+  HostBinding,
+  Input,
+  OnInit,
+  ViewEncapsulation,
+} from '@angular/core';
 
 @Component({
   selector: 'ngx-shimmer-loading',
+  standalone: false,
   templateUrl: './ngx-shimmer-loading.component.html',
   styleUrls: ['./ngx-shimmer-loading.component.scss'],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
 })
 export class NgxShimmerLoadingComponent implements OnInit {
-
-
   @HostBinding('class') class = 'shimmer-loading';
 
   @Input() width = '80%';

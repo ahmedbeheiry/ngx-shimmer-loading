@@ -1,49 +1,56 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css?family=Cairo:400,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Cairo:400,700&display=swap");
 
-*, *::before, *::after {
-	box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
-	font-family: 'Cairo', sans-serif;
-	background-color: #f5fbfd;
-	color: #4e4e4e;
-	font-weight: normal;
-	padding: 0;
-	margin: 0;
-	line-height: 1.5;
+  font-family: "Cairo", sans-serif;
+  background-color: #f5fbfd;
+  color: #4e4e4e;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-weight: bold;
-	margin: 0;
-	margin-bottom: 1rem;
-	line-height: 1.2;
-	color: #222;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  color: #222;
 }
 
 p {
-	margin: 0;
-	margin-bottom: 1rem;
+  margin: 0;
+  margin-bottom: 1rem;
 }
 
 .container {
-	width: 100%;
-	max-width: 1170px;
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: 1rem;
-	padding-right: 1rem;
+  width: 100%;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .row {
-	display: flex;
-	flex-wrap: wrap;
-	margin-left: -1rem;
-	margin-right: -1rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1rem;
+  margin-right: -1rem;
 }
 
 .text-center {
-	text-align: center;
+  text-align: center;
 }
