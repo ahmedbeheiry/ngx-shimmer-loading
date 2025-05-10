@@ -1,6 +1,6 @@
-# Shimmer Loading for Angular 8+ Apps
+# Shimmer Loading for Angular 15+ Apps
 
-Facebook shimmer loading effect for Angular 8+ apps. It's a fancy way to tell your users that there's something loading.
+Facebook shimmer loading effect for Angular 15+ apps. It's a fancy way to tell your users that there's something loading.
 
 ngx-shimmer-loading is simple and easy to use. It also comes with the two directions
 
